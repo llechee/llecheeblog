@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blogs.leechee.top/posts/5c8c37e6/</loc>
-    
-    <lastmod>2023-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blogs.leechee.top/posts/7eea43f6/</loc>
     
     <lastmod>2023-01-11</lastmod>
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/posts/6c0c8dda/</loc>
+    <loc>https://blogs.leechee.top/posts/5c8c37e6/</loc>
     
     <lastmod>2023-01-11</lastmod>
     
@@ -48,6 +39,15 @@
   
   <url>
     <loc>https://blogs.leechee.top/posts/5c8c37e6/</loc>
+    
+    <lastmod>2023-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogs.leechee.top/posts/6c0c8dda/</loc>
     
     <lastmod>2023-01-11</lastmod>
     
@@ -390,13 +390,6 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/tags/ubuntu/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blogs.leechee.top/tags/QT/</loc>
     <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -405,6 +398,13 @@
   
   <url>
     <loc>https://blogs.leechee.top/tags/%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2023-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogs.leechee.top/tags/ubuntu/</loc>
     <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -439,13 +439,6 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/tags/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blogs.leechee.top/tags/hexo/</loc>
     <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -454,6 +447,13 @@
   
   <url>
     <loc>https://blogs.leechee.top/tags/post/</loc>
+    <lastmod>2023-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogs.leechee.top/tags/%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -497,28 +497,7 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/categories/Linux/Beauty/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/QT/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/categories/Linux/ROS/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E9%A9%B1%E5%8A%A8/</loc>
+    <loc>https://blogs.leechee.top/categories/HexoPost/</loc>
     <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -526,20 +505,6 @@
   
   <url>
     <loc>https://blogs.leechee.top/categories/Project/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2023-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/categories/HexoPost/</loc>
     <lastmod>2023-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

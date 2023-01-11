@@ -44,8 +44,6 @@
           
           <category> 嵌入式 </category>
           
-          <category> QT </category>
-          
       </categories>
       
       
@@ -160,14 +158,14 @@
           
           <category> Linux </category>
           
-          <category> Beauty </category>
-          
       </categories>
       
       
         <tags>
             
             <tag> 记录 </tag>
+            
+            <tag> ubuntu </tag>
             
         </tags>
       
@@ -186,8 +184,6 @@
       <categories>
           
           <category> Linux </category>
-          
-          <category> ROS </category>
           
       </categories>
       
@@ -336,8 +332,6 @@
           
           <category> 嵌入式 </category>
           
-          <category> 软件 </category>
-          
       </categories>
       
       
@@ -366,8 +360,6 @@
       <categories>
           
           <category> 嵌入式 </category>
-          
-          <category> 驱动 </category>
           
       </categories>
       
