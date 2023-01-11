@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>我的ubuntu20的vscode设置</title>
+      <title>ubuntu20的vscode设置</title>
       <link href="/posts/9c7668f5/"/>
       <url>/posts/9c7668f5/</url>
       
@@ -13,16 +13,14 @@
       
       <categories>
           
-          <category> 学习 </category>
-          
-          <category> Tip </category>
+          <category> Linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
+            <tag> Linux </tag>
             
             <tag> 嵌入式 </tag>
             
@@ -35,7 +33,7 @@
     
     
     <entry>
-      <title>QT小记</title>
+      <title>QT</title>
       <link href="/posts/9454662e/"/>
       <url>/posts/9454662e/</url>
       
@@ -44,18 +42,20 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 嵌入式 </category>
           
-          <category> 上位机 </category>
+          <category> QT </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
             <tag> QT </tag>
+            
+            <tag> 项目 </tag>
             
         </tags>
       
@@ -73,22 +73,18 @@
       
       <categories>
           
-          <category> 学习 </category>
-          
-          <category> 网络编程 </category>
+          <category> Linux </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> unbuntu </tag>
+            
+            <tag> 高并发 </tag>
+            
             <tag> C++ </tag>
-            
-            <tag> 408 </tag>
-            
-            <tag> 操作系统 </tag>
-            
-            <tag> 计算机网络基础 </tag>
             
         </tags>
       
@@ -97,7 +93,7 @@
     
     
     <entry>
-      <title>C++基础</title>
+      <title>C++</title>
       <link href="/posts/f9a964a9/"/>
       <url>/posts/f9a964a9/</url>
       
@@ -106,16 +102,14 @@
       
       <categories>
           
-          <category> 学习 </category>
-          
-          <category> C++ </category>
+          <category> C/C++ </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
             <tag> 语言 </tag>
             
@@ -135,7 +129,7 @@
       
       <categories>
           
-          <category> 算法 </category>
+          <category> DataStructure </category>
           
       </categories>
       
@@ -146,7 +140,7 @@
             
             <tag> 排序 </tag>
             
-            <tag> coding </tag>
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -164,16 +158,16 @@
       
       <categories>
           
-          <category> 日常 </category>
+          <category> Linux </category>
+          
+          <category> Beauty </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 操作系统 </tag>
-            
-            <tag> 工具 </tag>
+            <tag> 记录 </tag>
             
         </tags>
       
@@ -182,7 +176,7 @@
     
     
     <entry>
-      <title>ROS1 Noetic</title>
+      <title>ROS1</title>
       <link href="/posts/f85532d9/"/>
       <url>/posts/f85532d9/</url>
       
@@ -191,7 +185,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> Linux </category>
           
           <category> ROS </category>
           
@@ -199,6 +193,8 @@
       
       
         <tags>
+            
+            <tag> 记录 </tag>
             
             <tag> 操作系统 </tag>
             
@@ -220,16 +216,14 @@
       
       <categories>
           
-          <category> 语言 </category>
-          
-          <category> C++ </category>
+          <category> C/C++ </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
             <tag> 语言 </tag>
             
@@ -240,7 +234,7 @@
     
     
     <entry>
-      <title>学习途中小Tips</title>
+      <title>日常效率Tips</title>
       <link href="/posts/6c0c8dda/"/>
       <url>/posts/6c0c8dda/</url>
       
@@ -249,20 +243,24 @@
       
       <categories>
           
-          <category> 记录 </category>
-          
-          <category> Tip </category>
+          <category> Tips </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
+            <tag> C/C++ </tag>
+            
+            <tag> Tips </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 嵌入式 </tag>
             
-            <tag> Tip </tag>
+            <tag> 记录 </tag>
             
         </tags>
       
@@ -271,7 +269,7 @@
     
     
     <entry>
-      <title>博客常用配置</title>
+      <title>博客文章Title</title>
       <link href="/posts/57b0fba5/"/>
       <url>/posts/57b0fba5/</url>
       
@@ -280,9 +278,7 @@
       
       <categories>
           
-          <category> Blog相关 </category>
-          
-          <category> Tip </category>
+          <category> HexoPost </category>
           
       </categories>
       
@@ -300,7 +296,7 @@
     
     
     <entry>
-      <title>yuanc</title>
+      <title>远程控制项目一些问题</title>
       <link href="/posts/8d1f2d1/"/>
       <url>/posts/8d1f2d1/</url>
       
@@ -309,16 +305,18 @@
       
       <categories>
           
-          <category> 语言 </category>
+          <category> Project </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> 记录 </tag>
             
-            <tag> 语言 </tag>
+            <tag> 项目 </tag>
+            
+            <tag> 心得 </tag>
             
         </tags>
       
@@ -327,7 +325,7 @@
     
     
     <entry>
-      <title>嵌入式驱动基础</title>
+      <title>嵌入式基础</title>
       <link href="/posts/5c8c37e6/"/>
       <url>/posts/5c8c37e6/</url>
       
@@ -336,16 +334,20 @@
       
       <categories>
           
-          <category> 语言 </category>
+          <category> 嵌入式 </category>
+          
+          <category> 软件 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
-            <tag> 语言 </tag>
+            <tag> 嵌入式 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
       
@@ -363,16 +365,22 @@
       
       <categories>
           
-          <category> 语言 </category>
+          <category> 嵌入式 </category>
+          
+          <category> 驱动 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> C++ </tag>
+            <tag> C/C++ </tag>
             
-            <tag> 语言 </tag>
+            <tag> 嵌入式 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> Drivers </tag>
             
         </tags>
       
