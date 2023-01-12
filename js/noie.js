@@ -1,3 +1,1 @@
-if(!!window.ActiveXObject || "ActiveXObject" in window){
-    window.location.href="./noie.html";
-}
+(window.ActiveXObject||"ActiveXObject"in window)&&(window.location.href="./noie.html");
