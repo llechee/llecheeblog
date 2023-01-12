@@ -1,1 +1,189 @@
-const CACHE_NAME="ICDNCache";let cachelist=[];self.addEventListener("install",(async function(e){self.skipWaiting(),e.waitUntil(caches.open(CACHE_NAME).then((function(e){return console.log("Opened cache"),e.addAll(cachelist)})))})),self.addEventListener("fetch",(async e=>{try{e.respondWith(handle(e.request))}catch(t){e.respondWith(handleerr(e.request,t))}}));const handleerr=async(e,t)=>new Response(`<h1>CDN分流器遇到了致命错误</h1>\n    <b>${t}</b>`,{headers:{"content-type":"text/html; charset=utf-8"}}),lfetch=async(e,t)=>{let n=new AbortController;const s=async e=>new Response(await e.arrayBuffer(),{status:e.status,headers:e.headers});return Promise.any||(Promise.any=function(e){return new Promise(((t,n)=>{let s=(e=Array.isArray(e)?e:[]).length,a=[];if(0===s)return n(new AggregateError("All promises were rejected"));e.forEach((e=>{e.then((e=>{t(e)}),(e=>{s--,a.push(e),0===s&&n(new AggregateError(a))}))}))}))}),Promise.any(e.map((e=>new Promise(((t,a)=>{fetch(e,{signal:n.signal}).then(s).then((e=>{200==e.status?(n.abort(),t(e)):a(e)}))})))))};self.addEventListener("fetch",(async e=>{try{e.respondWith(handle(e.request))}catch(t){-1!=fullpath(urlPath).indexOf(".html")&&e.respondWith(fetch("/404.html"))}}));const fullpath=e=>((e=e.split("?")[0].split("#")[0]).match(/\/$/)&&(e+="index"),e.match(/\.[a-zA-Z]+$/)||(e+=".html"),e),generate_blog_urls=(e,t,n)=>{const s=["https://ariasakablog.s3.ladydaily.com"];for(var a in s)s[a]+=n;return s},mirror=[],get_newest_version=async e=>lfetch(e,e[0]).then((e=>e.json())).then(res.version);self.db={read:(e,t)=>(t||(t={type:"text"}),new Promise(((t,n)=>{caches.open(CACHE_NAME).then((n=>{n.match(new Request(`https://LOCALCACHE/${encodeURIComponent(e)}`)).then((function(e){e||t(null),e.text().then((e=>t(e)))})).catch((()=>{t(null)}))}))}))),write:(e,t)=>new Promise(((n,s)=>{caches.open(CACHE_NAME).then((function(s){s.put(new Request(`https://LOCALCACHE/${encodeURIComponent(e)}`),new Response(t)),n()})).catch((()=>{s()}))}))};const set_newest_version=async e=>lfetch(e,e[0]).then((e=>e.json())).then((async e=>{await db.write("blog_version",e.version)}));function getFileType(e){return suffix=e.split(".")[e.split(".").length-1],"html"==suffix||"htm"==suffix?"text/html":"js"==suffix?"text/javascript":"css"==suffix?"text/css":"jpg"==suffix||"jpeg"==suffix?"image/jpeg":"ico"==suffix?"image/x-icon":"png"==suffix?"image/png":"text/plain"}setInterval((async()=>{await set_newest_version(mirror)}),6e4),setTimeout((async()=>{await set_newest_version(mirror)}),5e3);const handle=async e=>{const t=e.url,n=new URL(t),s=n.pathname,a=n.hostname;return lxs=[],"yisous.xyz"===a?lfetch(generate_blog_urls(0,await db.read("blog_version"),fullpath(s))).then((e=>e.arrayBuffer())).then((e=>new Response(e,{headers:{"Content-Type":`${getFileType(fullpath(s).split("/")[fullpath(s).split("/").length-1].split("\\")[fullpath(s).split("/")[fullpath(s).split("/").length-1].split("\\").length-1])};charset=utf-8`}}))):fetch(e)};
+const CACHE_NAME = 'ICDNCache';
+let cachelist = [];
+self.addEventListener('install', async function (installEvent) {
+    self.skipWaiting();
+    installEvent.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(function (cache) {
+                console.log('Opened cache');
+                return cache.addAll(cachelist);
+            })
+    );
+});
+self.addEventListener('fetch', async event => {
+    try {
+        event.respondWith(handle(event.request))
+    } catch (msg) {
+        event.respondWith(handleerr(event.request, msg))
+    }
+});
+const handleerr = async (req, msg) => {
+    return new Response(`<h1>CDN分流器遇到了致命错误</h1>
+    <b>${msg}</b>`, { headers: { "content-type": "text/html; charset=utf-8" } })
+}
+const lfetch = async (urls, url) => {
+    let controller = new AbortController();
+    const PauseProgress = async (res) => {
+        return new Response(await (res).arrayBuffer(), { status: res.status, headers: res.headers });
+    };
+    if (!Promise.any) {
+        Promise.any = function (promises) {
+            return new Promise((resolve, reject) => {
+                promises = Array.isArray(promises) ? promises : []
+                let len = promises.length
+                let errs = []
+                if (len === 0) return reject(new AggregateError('All promises were rejected'))
+                promises.forEach((promise) => {
+                    promise.then(value => {
+                        resolve(value)
+                    }, err => {
+                        len--
+                        errs.push(err)
+                        if (len === 0) {
+                            reject(new AggregateError(errs))
+                        }
+                    })
+                })
+            })
+        }
+    }
+    return Promise.any(urls.map(urls => {
+        return new Promise((resolve, reject) => {
+            fetch(urls, {
+                signal: controller.signal
+            })
+                .then(PauseProgress)
+                .then(res => {
+                    if (res.status == 200) {
+                        controller.abort();
+                        resolve(res)
+                    } else {
+                        reject(res)
+                    }
+                })
+        })
+    }))
+}
+self.addEventListener('fetch', async event => {
+    try{
+        event.respondWith(handle(event.request))
+    }catch(err){
+        if(fullpath(urlPath).indexOf(".html")!=-1){
+            event.respondWith(fetch("/404.html"))
+        }
+    }
+});
+const fullpath = (path) => {
+    path = path.split('?')[0].split('#')[0]
+    if (path.match(/\/$/)) {
+        path += 'index'
+    }
+    if (!path.match(/\.[a-zA-Z]+$/)) {
+        path += '.html'
+    }
+    return path
+}
+const generate_blog_urls = (packagename, blogversion, path) => {
+    const npmmirror = [
+        // `https://unpkg.zhimg.com/${packagename}@${blogversion}`,
+        // `https://npm.elemecdn.com/${packagename}@${blogversion}`,
+        // `https://cdn.jsdelivr.net/npm/${packagename}@${blogversion}`,
+        // `https://cdn.afdelivr.top/npm/${packagename}@${blogversion}`,
+        `https://ariasakablog.s3.ladydaily.com`
+    ]
+    for (var i in npmmirror) {
+        npmmirror[i] += path
+    }
+    return npmmirror
+}
+const mirror = [
+    // `https://registry.npmmirror.com/ariasakablog/latest`,
+    // `https://registry.npmjs.org/ariasakablog/latest`,
+    // `https://mirrors.cloud.tencent.com/npm/ariasakablog/latest`
+]
+const get_newest_version = async (mirror) => {
+return lfetch(mirror, mirror[0])
+    .then(res => res.json())
+    .then(res.version)
+}
+self.db = { //全局定义db,只要read和write,看不懂可以略过
+    read: (key, config) => {
+        if (!config) { config = { type: "text" } }
+        return new Promise((resolve, reject) => {
+            caches.open(CACHE_NAME).then(cache => {
+                cache.match(new Request(`https://LOCALCACHE/${encodeURIComponent(key)}`)).then(function (res) {
+                    if (!res) resolve(null)
+                    res.text().then(text => resolve(text))
+                }).catch(() => {
+                    resolve(null)
+                })
+            })
+        })
+    },
+    write: (key, value) => {
+        return new Promise((resolve, reject) => {
+            caches.open(CACHE_NAME).then(function (cache) {
+                cache.put(new Request(`https://LOCALCACHE/${encodeURIComponent(key)}`), new Response(value));
+                resolve()
+            }).catch(() => {
+                reject()
+            })
+        })
+    }
+}
+
+const set_newest_version = async (mirror) => { //改为最新版本写入数据库
+    return lfetch(mirror, mirror[0])
+        .then(res => res.json()) //JSON Parse
+        .then(async res => {
+            await db.write('blog_version', res.version) //写入
+            return;
+        })
+}
+
+setInterval(async() => {
+    await set_newest_version(mirror) //定时更新,一分钟一次
+}, 60*1000);
+
+setTimeout(async() => { 
+    await set_newest_version(mirror)//打开五秒后更新,避免堵塞
+},5000)
+function getFileType(fileName) {
+    suffix=fileName.split('.')[fileName.split('.').length-1]
+    if(suffix=="html"||suffix=="htm") {
+        return 'text/html';
+    }
+    if(suffix=="js") {
+        return 'text/javascript';
+    }
+    if(suffix=="css") {
+        return 'text/css';
+    }
+    if(suffix=="jpg"||suffix=="jpeg") {
+        return 'image/jpeg';
+    }
+    if(suffix=="ico") {
+        return 'image/x-icon';
+    }
+    if(suffix=="png") {
+        return 'image/png';
+    }
+    return 'text/plain';
+  }
+const handle = async(req)=>{
+    const urlStr = req.url
+    const urlObj = new URL(urlStr);
+    const urlPath = urlObj.pathname;
+    const domain = urlObj.hostname;
+    //从这里开始
+    lxs=[]
+    if(domain === "yisous.xyz"){//这里写你需要拦截的域名
+        var l=lfetch(generate_blog_urls('ariasakablog',await db.read('blog_version') || '1.0.18',fullpath(urlPath)))
+        return l
+        .then(res=>res.arrayBuffer())
+        .then(buffer=>new Response(buffer,{headers:{"Content-Type":`${getFileType(fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length-1].split("\\")[fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length-1].split("\\").length-1])};charset=utf-8`}}));//重新定义header
+    }
+    else{
+        return fetch(req);
+    }
+}
