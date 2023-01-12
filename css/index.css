@@ -3392,22 +3392,13 @@ li.categoryBar-list-item:nth-child(7) {
   background: #3b70fc88;
 }
 li.categoryBar-list-item:nth-child(1)>span::after {
-  content: '3D打印分享' !important;
+  content: '分享' !important;
 }
 li.categoryBar-list-item:nth-child(2)>span::after {
-  content: 'Hexo魔改教程' !important;
+  content: '杂谈' !important;
 }
 li.categoryBar-list-item:nth-child(3)>span::after {
-  content: '自己的杂谈和事情' !important;
-}
-li.categoryBar-list-item:nth-child(4)>span::after {
-  content: '白嫖党万岁！' !important;
-}
-li.categoryBar-list-item:nth-child(5)>span::after {
-  content: '一些教程' !important;
-}
-li.categoryBar-list-item:nth-child(6)>span::after {
-  content: '解决一些bug与避坑' !important;
+  content: 'bug与避坑' !important;
 }
 li.categoryBar-list-item {
   width: 32.3% !important;
