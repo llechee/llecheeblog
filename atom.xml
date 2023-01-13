@@ -186,9 +186,9 @@
     <category term="Linux" scheme="https://blogs.leechee.top/categories/Linux/"/>
     
     
-    <category term="记录" scheme="https://blogs.leechee.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="ubuntu" scheme="https://blogs.leechee.top/tags/ubuntu/"/>
+    
+    <category term="记录" scheme="https://blogs.leechee.top/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
@@ -274,13 +274,13 @@ PS:之前学了一点,不过只在opencv简单使用,算法题和面试题,包�
     
     <category term="C/C++" scheme="https://blogs.leechee.top/tags/C-C/"/>
     
-    <category term="Tips" scheme="https://blogs.leechee.top/tags/Tips/"/>
-    
-    <category term="Windows" scheme="https://blogs.leechee.top/tags/Windows/"/>
-    
     <category term="Linux" scheme="https://blogs.leechee.top/tags/Linux/"/>
     
     <category term="嵌入式" scheme="https://blogs.leechee.top/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+    <category term="Tips" scheme="https://blogs.leechee.top/tags/Tips/"/>
+    
+    <category term="Windows" scheme="https://blogs.leechee.top/tags/Windows/"/>
     
     <category term="记录" scheme="https://blogs.leechee.top/tags/%E8%AE%B0%E5%BD%95/"/>
     
@@ -337,9 +337,9 @@ Post Front-matter 用于文章頁配置&lt;/p&gt;
     <category term="Project" scheme="https://blogs.leechee.top/categories/Project/"/>
     
     
-    <category term="记录" scheme="https://blogs.leechee.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="项目" scheme="https://blogs.leechee.top/tags/%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="记录" scheme="https://blogs.leechee.top/tags/%E8%AE%B0%E5%BD%95/"/>
     
     <category term="心得" scheme="https://blogs.leechee.top/tags/%E5%BF%83%E5%BE%97/"/>
     
