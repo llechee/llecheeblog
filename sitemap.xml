@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/categories/index.html</loc>
+    <loc>https://blogs.leechee.top/bangumis/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -281,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/bangumis/index.html</loc>
+    <loc>https://blogs.leechee.top/categories/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -343,6 +343,27 @@
   </url>
   
   <url>
+    <loc>https://blogs.leechee.top/tags/unbuntu/</loc>
+    <lastmod>2023-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogs.leechee.top/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/</loc>
+    <lastmod>2023-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogs.leechee.top/tags/C/</loc>
+    <lastmod>2023-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blogs.leechee.top/tags/Tips/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -372,27 +393,6 @@
   
   <url>
     <loc>https://blogs.leechee.top/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2023-01-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/tags/unbuntu/</loc>
-    <lastmod>2023-01-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/</loc>
-    <lastmod>2023-01-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.leechee.top/tags/C/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -485,14 +485,14 @@
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/categories/Tips/</loc>
+    <loc>https://blogs.leechee.top/categories/Linux/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blogs.leechee.top/categories/Linux/</loc>
+    <loc>https://blogs.leechee.top/categories/Tips/</loc>
     <lastmod>2023-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
