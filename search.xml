@@ -163,9 +163,9 @@
       
         <tags>
             
-            <tag> ubuntu </tag>
-            
             <tag> 记录 </tag>
+            
+            <tag> ubuntu </tag>
             
         </tags>
       
@@ -248,13 +248,13 @@
             
             <tag> C/C++ </tag>
             
-            <tag> Linux </tag>
-            
-            <tag> 嵌入式 </tag>
-            
             <tag> Tips </tag>
             
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> 嵌入式 </tag>
             
             <tag> 记录 </tag>
             
@@ -308,9 +308,9 @@
       
         <tags>
             
-            <tag> 项目 </tag>
-            
             <tag> 记录 </tag>
+            
+            <tag> 项目 </tag>
             
             <tag> 心得 </tag>
             
